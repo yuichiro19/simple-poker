@@ -10,5 +10,6 @@ class Game < ApplicationRecord
         validates :player7
         validates :player8
         validates :player9
+        validates :player10
     end
 end

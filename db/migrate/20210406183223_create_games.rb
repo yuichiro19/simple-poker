@@ -11,6 +11,7 @@ class CreateGames < ActiveRecord::Migration[6.0]
       t.string :player7, null: false, default: "player7"
       t.string :player8, null: false, default: "player8"
       t.string :player9, null: false, default: "player9"
+      t.string :player10, null: false, default: "player10"
       t.timestamps
     end
   end

@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 2021_04_06_183223) do
     t.string "player7", default: "player7", null: false
     t.string "player8", default: "player8", null: false
     t.string "player9", default: "player9", null: false
+    t.string "player10", default: "player10", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
