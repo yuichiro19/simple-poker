@@ -1,6 +1,6 @@
 class Game < ApplicationRecord
     with_options presence: true do
-        validates :players, numericality: { greater_than_or_equal_to: 2, less_than_or_equal_to: 9 }
+        validates :players, numericality: { greater_than_or_equal_to: 2, less_than_or_equal_to: 10 }
         validates :player1
         validates :player2
         validates :player3
