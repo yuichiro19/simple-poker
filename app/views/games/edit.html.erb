@@ -1,0 +1,6 @@
+<h2>プレイヤー名登録</h2>
+<%= form_with model: @game, local: true do |f| %>
+    <%= f.text_field :player1 %>
+    <%= f.text_field :player2 %>
+    
+<% end %>
