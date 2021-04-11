@@ -1,5 +1,7 @@
-<h1>Simple-Pkoer</h1>
+<h1>Simple-Poker</h1>
 <%= form_with model: @game, local: true do |f| %>
-<div>参加人数(2~10人)</div>
-<%= f.number_field :players, value: 2 %>
+    <div>参加人数(2~10人)</div>
+    <%= f.number_field :players, value: 2, id: "number-of-players" %>
+    <div><%= f.submit "START" %></div>
+
 <% end %>
