@@ -1,6 +1,33 @@
 <h2>プレイヤー名登録</h2>
 <%= form_with model: @game, local: true do |f| %>
-    <%= f.text_field :player1 %>
-    <%= f.text_field :player2 %>
-    
+    <div><%= f.text_field :player1 %></div>
+    <div><%= f.text_field :player2 %></div>
+    <% if @game.players >= 3 %>
+        <div><%= f.text_field :player3 %></div>
+    <% end %>
+    <% if @game.players >= 4 %>
+        <div><%= f.text_field :player4 %></div>
+    <% end%>
+    <% if @game.players >= 5 %>
+        <div><%= f.text_field :player5 %></div>
+    <% end %>
+    <% if @game.players >= 6 %>
+        <div><%= f.text_field :player6 %></div>
+    <% end %>
+    <% if @game.players >= 7 %>
+        <div><%= f.text_field :player7 %></div>
+    <% end %>
+    <% if @game.players >= 8 %>
+        <div><%= f.text_field :player8 %></div>
+    <% end %>
+    <% if @game.players >= 9 %>
+        <div><%= f.text_field :player9 %></div>
+    <% end %>
+    <% if @game.players >= 10 %>
+        <div><%= f.text_field :player10 %></div>
+    <% end %>
+    <%= f.submit "START" %>
+
+
+
 <% end %>
